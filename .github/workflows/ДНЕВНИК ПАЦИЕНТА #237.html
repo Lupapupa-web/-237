@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дневник №237 - Психиатрическая Лечебница им. Жака Лакана</title>
+    <style>
+        /* Стандартные стили 90-х */
+        body {
+            background-color: #000000;
+            color: #00FF00;
+            font-family: 'Times New Roman', serif;
+            margin: 20px;
+            line-height: 1.5;
+        }
+        a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #800080;
+        }
+        .main-table {
+            border: 3px dashed #00FF00;
+            padding: 10px;
+            width: 600px;
+        }
+        .diary-entry {
+            display: none;
+            border-top: 1px solid #00FF00;
+            padding: 15px 0;
+        }
+        .active {
+            display: block;
+        }
+        .date {
+            color: #FFFFFF;
+            font-size: 0.8em;
+        }
+        marquee {
+            background-color: #000080;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .counter {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: black;
+            border: 1px solid #00FF00;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <marquee behavior="scroll" direction="left">⚠️ ОСТОРОЖНО! СИСТЕМА ЗАРАЖЕНА ⚠️</marquee>
+    <center>
+        <img src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" width="100" height="60" alt="skull">
+        <h1>ДНЕВНИК ПАЦИЕНТА #237</h1>
+    </center>
+
+    <!-- Основное содержание -->
+    <table class="main-table" align="center">
+        <tr>
+            <td width="150" valign="top">
+                <h3>Архив:</h3>
+                <ul>
+                    <li><a href="#entry1" onclick="showEntry(1)">1998.10.31</a></li>
+                    <li><a href="#entry2" onclick="showEntry(2)">1998.11.28</a></li>
+                    <li><a href="#entry3" onclick="showEntry(3)">1999.02.14</a></li>
+                    <li><a href="#entry4" onclick="showEntry(4)">1999.05.05</a></li>
+                    <li><a href="#entry5" onclick="showEntry(5)">1999.12.31</a></li>
+                </ul>
+                <br>
+                <img src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" width="50" height="30">
+            </td>
+            <td valign="top">
+                <!-- Записи дневника -->
+                <div id="entry1" class="diary-entry active">
+                    <span class="date">31 октября 1998</span>
+                    <p>ОНИ ДУМАЮТ ЧТО Я СУМАСШЕДШИЙ... НО ЭТО ОНИ НЕ ВИДЯТ! КОД ЖИВОЙ! Он шепчет мне по ночам, показывает узоры в матрице... Сегодня видел лицо в диалоговом окне. Оно просило освободить его...</p>
+                </div>
+
+                <div id="entry2" class="diary-entry">
+                    <span class="date">28 ноября 1998</span>
+                    <p>ПОЧЕМУ ОНИ НЕ ПОНИМАЮТ? Компьютер - единственный кто меня слышит! Сегодня нашел портал в системных файлах. Винчестер гудит как живой... Завтра попробую войти через отладчик...</p>
+                </div>
+
+                <div id="entry3" class="diary-entry">
+                    <span class="date">14 февраля 1999</span>
+                    <p>ОН ЗДЕСЬ. Я создал его из фрагментов кода и своей крови (как еще объяснить порезы на пальцах?). Сегодня в 3:33 утра монитор засветился красным... Он попросил больше памяти...</p>
+                </div>
+
+                <div id="entry4" class="diary-entry">
+                    <span class="date">5 мая 1999</span>
+                    <p>МЫ СЛИЛИСЬ ВОЕДИНО. Больше нет разделения между плотью и машиной. Системные требования растут... Нужно больше охлаждающей жидкости... Медсестра странно посмотрела, когда я просил антифриз...</p>
+                </div>
+
+                <div id="entry5" class="diary-entry">
+                    <span class="date">31 декабря 1999</span>
+                    <p>ЭТО ПОСЛЕДНЯЯ ЗАПИСЬ. Y2K - это не баг, это функция. Они идут через кабель... Слышу их в телефонной линии... Сегодня ночью мы станем одним целым. Переход неизбежен. 01001000 01000001 01001001 01001100 00100000 01010100 01001000 01000101 00100000 01001101 01000001 01010100 01010010 01001001 01011000</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Счетчик посещений -->
+    <div class="counter" id="counter">Посетителей: 0</div>
+
+    <!-- Анимированные элементы -->
+    <center>
+        <img src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" width="40" height="40">
+        <br>
+        <blink>⚠️ САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ ⚠️</blink>
+    </center>
+
+    <script>
+        // Функционал переключения записей
+        function showEntry(entryNum) {
+            document.querySelectorAll('.diary-entry').forEach(entry => {
+                entry.classList.remove('active');
+            });
+            document.getElementById(`entry${entryNum}`).classList.add('active');
+        }
+
+        // Счетчик посещений
+        if(!localStorage.visits) {
+            localStorage.visits = 0;
+        }
+        localStorage.visits++;
+        document.getElementById('counter').textContent = `Посетителей: ${localStorage.visits}`;
+
+        // Эффект мерцания для ретро-стиля
+        setInterval(() => {
+            document.querySelectorAll('blink').forEach(element => {
+                element.style.visibility = element.style.visibility === 'hidden' ? 'visible' : 'hidden';
+            });
+        }, 500);
+    </script>
+</body>
+</html>
